@@ -1,0 +1,11 @@
+---
+ansible_host: arista.shadowman.dev
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: arista.eos.eos
+ansible_user: "{{ aristauser }}"
+ansible_password: "{{ aristapassword }}"
+ansible_become_method: enable
+ansible_become_user: "{{ aristauser }}"
+ansible_become_password: "{{ aristapassword }}"
+configured_by: "configured by Ansible"
+ansible_command_timeout: 240
