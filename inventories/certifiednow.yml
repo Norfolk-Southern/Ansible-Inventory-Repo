@@ -21,4 +21,4 @@ keyed_groups:
   - key: classification
     separator: ""
 groups:
-  compliant_servers: compliance if compliance != ""
+  compliant_servers: u_compliance != null
