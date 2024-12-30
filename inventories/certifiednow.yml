@@ -20,3 +20,5 @@ keyed_groups:
     separator: ""
   - key: classification
     separator: ""
+groups:
+  compliant_servers: u_compliance != "null"
