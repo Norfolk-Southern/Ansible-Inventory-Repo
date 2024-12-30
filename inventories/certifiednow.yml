@@ -1,7 +1,6 @@
 # my.SNOW.yml
 plugin: servicenow.itsm.now
 inventory_hostname_source: host_name
-strict: false
 enhanced: true
 columns:
   - host_name
@@ -14,7 +13,7 @@ columns:
   - u_compliance
 compose:
   ip_addr: ip_address
-  compliance: u_compliance if u_compliance is defined else default(omit)
+  compliance: u_compliance if u_compliance is defined else default(omit, true)
   ansible_host: host_name
 keyed_groups:
   - key: os
@@ -22,4 +21,4 @@ keyed_groups:
   - key: classification
     separator: ""
 groups:
-  compliant_servers: u_compliance if u_compliance is defined else default(omit)
+  compliant_servers: u_compliance if u_compliance is defined else default(omit, true)
