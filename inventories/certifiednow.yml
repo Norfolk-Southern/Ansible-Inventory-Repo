@@ -13,7 +13,7 @@ columns:
   - u_compliance
 compose:
   ip_addr: ip_address
-  compliance: u_compliance
+  compliance: u_compliance if u_compliance != null
   ansible_host: host_name
 keyed_groups:
   - key: os
@@ -21,4 +21,4 @@ keyed_groups:
   - key: classification
     separator: ""
 groups:
-  compliant_servers: u_compliance != "null"
+  compliant_servers: u_compliance != null
