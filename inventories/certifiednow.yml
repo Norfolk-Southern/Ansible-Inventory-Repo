@@ -21,4 +21,4 @@ keyed_groups:
   - key: classification
     separator: ""
 groups:
-  compliant_servers: u_compliance if u_compliance is defined else default(omit, true)
+  compliant_servers: compliance if compliance != ""
