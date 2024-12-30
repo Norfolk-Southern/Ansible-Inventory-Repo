@@ -13,6 +13,7 @@ columns:
   - u_compliance
 compose:
   ip_addr: ip_address
+  compliance: u_compliance
   ansible_host: host_name
 keyed_groups:
   - key: os
