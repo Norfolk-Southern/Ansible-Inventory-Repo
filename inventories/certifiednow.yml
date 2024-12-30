@@ -10,6 +10,7 @@ columns:
   - os
   - classification
   - sys_id
+  - u_compliance
 compose:
   ip_addr: ip_address
   ansible_host: host_name
