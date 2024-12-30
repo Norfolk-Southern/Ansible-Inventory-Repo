@@ -1,6 +1,7 @@
 # my.SNOW.yml
 plugin: servicenow.itsm.now
 inventory_hostname_source: host_name
+strict: false
 enhanced: true
 columns:
   - host_name
