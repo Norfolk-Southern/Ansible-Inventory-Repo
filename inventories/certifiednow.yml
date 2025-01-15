@@ -29,9 +29,6 @@ strict: true
 table: cmdb_ci_server
 columns:
   - name
-  - ip_address
-  - location
-  - location.country
-compose:
-  street: location
-  country: lookup('ansible.builtin.vars', 'location.country')
+  - sys_id
+  - sys_class_name
+
