@@ -10,8 +10,9 @@ columns:
   - sys_class_name
   - operational_status
   - ip_address
+  - sys_class_name
  keyed_groups:
-  - key: manufacturer | lower
+  - key: sn_sys_class_name | lower
     prefix: ''
     separator: ''
   
