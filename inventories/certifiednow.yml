@@ -2,12 +2,15 @@ plugin: servicenow.itsm.now
 enhanced: false
 strict: true
 table: cmdb_ci_server
+query:
+  - sys_id: 'nameISNOTEMPTY'
 columns:
   - name
   - manufacturer
   - model_id
-  - sys_id
+  - host_name
   - sys_class_name
   - operational_status
+  
   
 
