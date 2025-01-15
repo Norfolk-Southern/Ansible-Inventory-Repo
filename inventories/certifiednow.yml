@@ -11,7 +11,7 @@ columns:
   - operational_status
   - ip_address
   - sys_class_name
- keyed_groups:
+keyed_groups:
   - key: sys_class_name | lower
     prefix: ''
     separator: ''
