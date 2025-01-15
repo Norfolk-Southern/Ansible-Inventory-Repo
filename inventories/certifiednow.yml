@@ -9,6 +9,7 @@ columns:
   - host_name
   - sys_class_name
   - operational_status
+  - ip_address
  
   
   
