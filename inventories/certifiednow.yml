@@ -9,8 +9,10 @@ columns:
   - manufacturer
   - model_id
   - host_name
+  - ip_address
   - sys_class_name
   - operational_status
+ 
   
   
 
