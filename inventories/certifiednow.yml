@@ -12,7 +12,7 @@ columns:
   - ip_address
   - sys_class_name
  keyed_groups:
-  - key: sn_sys_class_name | lower
+  - key: sys_class_name | lower
     prefix: ''
     separator: ''
   
