@@ -10,11 +10,10 @@ columns:
   - sys_class_name
   - operational_status
   - ip_address
-  - sys_class_name
   - support_group
 keyed_groups:
-  - key: sys_class_name | lower
-  #- key: support_group | lower
+  #- key: sys_class_name | lower
+  - key: support_group | lower
     prefix: ''
     separator: ''
   
