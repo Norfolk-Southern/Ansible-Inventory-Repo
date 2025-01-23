@@ -16,6 +16,7 @@ keyed_groups:
   - key: support_group | lower
     prefix: ''
     separator: ''
+    default: "ungrouped"
   
   
 
