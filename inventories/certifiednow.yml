@@ -13,7 +13,7 @@ columns:
   - support_group
 keyed_groups:
   #- key: sys_class_name | lower
-  - key: support_group | lower
+  - key: support_group | lower | regex_replace('[^a-z0-9_]', '_')
     prefix: ''
     separator: ''
     default: "ungrouped"
