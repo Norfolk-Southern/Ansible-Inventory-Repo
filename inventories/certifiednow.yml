@@ -20,7 +20,7 @@ keyed_groups:
   #- key: sys_class_name | lower
   #- key: support_group | lower | regex_replace('[^a-z0-9_]', '_')
   #- key: "{{ support_group | default('unknown_support_group') | lower | regex_replace('[^a-z0-9_]', '_') }}"
-  - key: "{{ support_group | default('unknown_support_group') }}"
+  - key: "support_group | default('unknown_support_group')"
     prefix: ''
     separator: ''
     #default: "ungrouped"
