@@ -13,14 +13,14 @@ columns:
   - support_group
 compose:
   ip_addr: ip_address
-  #supportgrp: support_group if support_group != None else default(omit)
-  supportgrp: support_group if support_group != None else 'unknown_support_group'
+  OS: sys_class_name if sys_class_name != None else default(omit)
+  #supportgrp: support_group if support_group != None else 'unknown_support_group'
   ansible_host: host_name  
 keyed_groups:
-  #- key: sys_class_name | lower
+  - key: sys_class_name | lower
   #- key: support_group | lower | regex_replace('[^a-z0-9_]', '_')
   #- key: "{{ support_group | default('unknown_support_group') | lower | regex_replace('[^a-z0-9_]', '_') }}"
-  - key: "support_group"
+  #- key: "support_group"
     prefix: ''
     separator: ''
     #default: "ungrouped"
