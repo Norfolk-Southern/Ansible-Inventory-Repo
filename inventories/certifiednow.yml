@@ -20,12 +20,10 @@ keyed_groups:
   - key: sys_class_name | lower
     prefix: ''
     separator: ''
-  - key: name | lower
+  - key: host_name | lower
     prefix: ''
     separator: ''
-  - key: ip_address | lower
-    prefix: ''
-    separator: ''  
+  
   
   
 
